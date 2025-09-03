@@ -37,6 +37,7 @@ public class _2_Object_creation_by_constructor {
         void greeting() {
             System.out.println("this is welcome from " + name);
         }
+
     }
 
     public static void main(String[] args) {
