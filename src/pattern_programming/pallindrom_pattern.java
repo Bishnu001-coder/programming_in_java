@@ -1,6 +1,6 @@
 package pattern_programming;
 import java.util.Scanner;
-public class number_changing_pyramid {
+public class pallindrom_pattern {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the number range");
@@ -14,7 +14,7 @@ public class number_changing_pyramid {
                 System.out.print(temp++);
             }
             temp-=2;
-            for(int k=1;k<=i;k++){
+            for(int k=1;k<=i-1;k++){
                 System.out.print(temp--);
             }
 
