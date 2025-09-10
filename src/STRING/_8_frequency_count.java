@@ -1,6 +1,6 @@
 package STRING;
 
-public class frequency_count {
+public class _8_frequency_count {
     public static void main(String[] args) {
         String s="bishnu prasad maharana";
             s=s.replace(" ", "");
