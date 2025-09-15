@@ -1,6 +1,6 @@
 package STRING;
 
-public class CONVERT_JAVADEV_J_V_D_IF_THE_VOWEL_graterhan_3 {
+public class _23_CONVERT_JAVADEV_J_V_D_IF_THE_VOWEL_graterhan_3 {
     public static void main(String[] args) {
         String s="javadev";
         int count=1;
