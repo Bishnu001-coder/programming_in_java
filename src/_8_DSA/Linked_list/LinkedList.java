@@ -63,4 +63,22 @@ public class LinkedList {
         if (head == null) tail = null;
         return val;
     }
+    public Object _6_removelast() {
+        if (head == null) return null;
+        if (head == tail) {
+            Object val = head.ele;
+            head = tail = null;
+            size--;
+            return val;
+        }
+        Node curr = head;
+        while (curr.next != tail) {
+            curr = curr.next;
+        }
+        Object val = tail.ele;
+        curr.next = null;
+        tail = curr;
+        size--;
+        return val;
+    }
 }
