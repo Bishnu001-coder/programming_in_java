@@ -15,6 +15,7 @@ public class LinkedList {
         newNode.next = head;
         head = newNode;
     }
+
     public void _2_addlast(Object ele) {
         Node newNode = new Node(ele);
         size++;
@@ -25,7 +26,24 @@ public class LinkedList {
         tail.next = newNode;
         tail = newNode;
     }
-    public void _3_printll() {
+
+    public void _3_addmiddle(int index, Object ele) {
+        if (index == 0) {
+            _1_addfirst(ele);
+            return;
+        }
+        Node newNode = new Node(ele);
+        Node curr = head;
+        int i = 0;
+        while (i < index - 1) {
+            curr = curr.next;
+            i++;
+        }
+        newNode.next = curr.next;
+        curr.next = newNode;
+    }
+
+    public void _4_printll() {
         if (head == null) {
             System.out.println("ll is empty");
             return;
@@ -37,5 +55,4 @@ public class LinkedList {
         }
         System.out.println("null");
     }
-
 }
