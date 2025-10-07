@@ -98,4 +98,17 @@ public class LinkedList {
         if (curr.ele.equals(key)) return idx;
         return _8_recursive_search(curr.next, key, idx + 1);
     }
+    public void _9_reverse() {
+        Node prev = null;
+        Node curr = head;
+        Node next;
+        tail = head;
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
 }
