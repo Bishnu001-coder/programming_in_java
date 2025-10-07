@@ -111,4 +111,22 @@ public class LinkedList {
         }
         head = prev;
     }
+    // Delete nth from end
+    public void _10_delete_from_end(int n) {
+        int sz = size;
+        if (n <= 0 || n > sz) return;
+        if (n == sz) {
+            _5_removefirst();
+            return;
+        }
+        Node curr = head;
+        for (int i = 1; i < sz - n; i++) {
+            curr = curr.next;
+        }
+        curr.next = curr.next.next;
+        if (curr.next == null) tail = curr;
+        size--;
+    }
+
+
 }
