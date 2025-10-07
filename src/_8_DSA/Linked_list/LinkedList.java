@@ -80,5 +80,16 @@ public class LinkedList {
         tail = curr;
         size--;
         return val;
+
+    }
+    public Integer _7_search_iterative(Object key) {
+        Node curr = head;
+        int i = 0;
+        while (curr != null) {
+            if (curr.ele.equals(key)) return i;
+            curr = curr.next;
+            i++;
+        }
+        return null;
     }
 }
