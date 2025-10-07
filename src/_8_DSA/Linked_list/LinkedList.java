@@ -55,4 +55,12 @@ public class LinkedList {
         }
         System.out.println("null");
     }
+    public Object _5_removefirst() {
+        if (head == null) return null;
+        Object val = head.ele;
+        head = head.next;
+        size--;
+        if (head == null) tail = null;
+        return val;
+    }
 }
