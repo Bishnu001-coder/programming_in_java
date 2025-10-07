@@ -25,5 +25,17 @@ public class LinkedList {
         tail.next = newNode;
         tail = newNode;
     }
+    public void _3_printll() {
+        if (head == null) {
+            System.out.println("ll is empty");
+            return;
+        }
+        Node curr = head;
+        while (curr != null) {
+            System.out.print(curr.ele + "->");
+            curr = curr.next;
+        }
+        System.out.println("null");
+    }
 
 }
