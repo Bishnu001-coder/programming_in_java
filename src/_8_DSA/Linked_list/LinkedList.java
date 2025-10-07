@@ -92,4 +92,10 @@ public class LinkedList {
         }
         return null;
     }
+    // Search recursive
+    public Integer _8_recursive_search(Node curr, Object key, int idx) {
+        if (curr == null) return null;
+        if (curr.ele.equals(key)) return idx;
+        return _8_recursive_search(curr.next, key, idx + 1);
+    }
 }
