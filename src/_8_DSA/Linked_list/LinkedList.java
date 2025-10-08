@@ -127,6 +127,17 @@ public class LinkedList {
         if (curr.next == null) tail = curr;
         size--;
     }
-
+public boolean iscycle(){
+Node slow= head;
+Node fast=head;
+while(fast!=null && fast.next!=null){
+    slow=slow.next;
+    fast=fast.next.next;
+    if(slow==fast){
+        return true;
+    }
+}
+return false;
+}
 
 }
