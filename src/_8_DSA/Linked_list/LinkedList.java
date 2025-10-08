@@ -45,7 +45,7 @@ public class LinkedList {
 
     public void _4_printll() {
         if (head == null) {
-            System.out.println("ll is empty");
+            System.out.print("ll is empty");
             return;
         }
         Node curr = head;

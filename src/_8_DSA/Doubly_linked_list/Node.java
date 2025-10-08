@@ -4,9 +4,9 @@ public class Node {
     Object ele;
     Node next;
     Node prev;
-    Node(Object ele){
+    public Node(Object ele){
         this.ele=ele;
-        next=null;
-        prev=null;
+        this.next=null;
+        this.prev=null;
     }
 }
