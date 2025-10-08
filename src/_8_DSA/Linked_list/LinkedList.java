@@ -127,7 +127,7 @@ public class LinkedList {
         if (curr.next == null) tail = curr;
         size--;
     }
-public boolean iscycle(){
+public boolean _11_iscycle(){
 Node slow= head;
 Node fast=head;
 while(fast!=null && fast.next!=null){
